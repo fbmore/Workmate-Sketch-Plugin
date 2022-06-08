@@ -1,0 +1,107 @@
+{
+	"bundleVersion": 1,
+	"version": "1.0.0",
+	"icon": "icon.png",
+	"identifier": "com.fbmore.workmate",
+	"description": "Useful commands to speed up your Workspace experience",
+	"homepage": "https://github.com/fbmore/Workmate-Sketch-Plugin/",
+	"author": "Francesco Bertocci",
+	"authorEmail": "fbmore@gmail.com",
+	"compatibleVersion": 71,
+	"commands": [
+		{
+			"name": "Copy Artboard Link",
+			"identifier": "Get-Artboard-Link-Clipboard",
+			"script": "get-artboard-link-clipboard.js",
+    },
+		{
+			"name": "Copy Artboard Link",
+			"identifier": "Get-Artboard-Link-Artboard-View-Clipboard",
+			"script": "get-artboard-link-artboard-view-clipboard.js",
+			"shortcut": "ctrl alt shift a"
+    },
+		{
+			"name": "Copy Selected Artboards as Links Collection",
+			"identifier": "Get-Artboard-Link-Artboard-View-Clipboard-2",
+			"script": "get-artboard-link-artboard-view-clipboard.js",
+			"shortcut": "ctrl alt shift l"
+    },
+		{
+			"name": "Copy Artboard Workspace Link as List",
+			"identifier": "Get-Artboard-Link-Clipboard-List",
+			"script": "get-artboard-link-clipboard-list.js"
+    },
+    {
+			"name": "Open Artboard in Workspace",
+			"identifier": "Get-Artboard-Link-Canvas",
+			"script": "get-artboard-link-canvas.js"
+    },
+    {
+			"name": "Open Artboard in Workspace",
+			"identifier": "Get-Artboard-Link-Artboard-View",
+			"script": "get-artboard-link-artboard-view.js"
+    },
+		{
+			"name": "Copy Page Link",
+			"identifier": "Get-Page-Link-Clipboard",
+			"script": "get-page-link-clipboard.js"
+    },
+    {
+			"name": "Open Page in Workspace",
+			"identifier": "Get-Page-Link-Canvas",
+			"script": "get-page-link-canvas.js"
+    },
+    {
+			"name": "Open Doc in Workspace",
+			"identifier": "Open-In-Workspace",
+			"script": "open-in-workspace.js",
+			"shortcut": "ctrl alt shift o"
+    },
+    {
+			"name": "Go to Workspace",
+			"identifier": "Go-To-Workspace",
+			"script": "go-to-workspace.js",
+			"shortcut": "ctrl alt shift g"
+    },
+    {
+			"name": "Manage Document Workspace Permissions",
+			"identifier": "Edit-Doc-Permissions-Workspace",
+			"script": "edit-doc-permissions-workspace.js",
+			"shortcut": "ctrl alt shift ,"
+    }
+  	],
+	"menu": {
+		"title": "💠 Workmate",
+		"items": [
+			"Open-In-Workspace",
+			"Get-Artboard-Link-Artboard-View-Clipboard-2",
+			"Edit-Doc-Permissions-Workspace",
+			"Go-To-Workspace",
+			"-",
+			{
+				"title": "Artboard View",
+				"items": [
+					"Get-Artboard-Link-Artboard-View-Clipboard",
+					"Get-Artboard-Link-Artboard-View",
+				]
+			},
+			{
+				"title": "Canvas View",
+				"items": [
+					"Get-Artboard-Link-Clipboard",
+					"Get-Artboard-Link-Canvas",
+				]
+			},
+			{
+				"title": "Page Actions",
+				"items": [
+					"Get-Page-Link-Clipboard",
+					"Get-Page-Link-Canvas",
+				]
+			}
+		]
+	},
+	"name": "Workmate",
+	"copyright": "Copyright © 2022 Francesco Bertocci, LLC. All rights reserved.",
+	"disableCocoaScriptPreprocessor": true,
+}
