@@ -26,7 +26,7 @@ var onRun = function(context) {
 
     var selectedArtboardID = getValueInParentheses(selectedArtboards[0].sketchObject.toString());
 
-    console.log(selectedArtboardID)
+    // console.log(selectedArtboardID)
 
     selectionFrame = getSelectionFrame(selectedArtboards)
 
@@ -42,17 +42,17 @@ var onRun = function(context) {
 
     var artboard = canvasLayers[i];
 
-    console.log("artboard: " + artboard.name)
+    // console.log("artboard: " + artboard.name)
     if (artboard.hidden === false) {
       canvasOriginXArray.push(artboard.frame.x);
       canvasOriginYArray.push(artboard.frame.y);
     }
   }
 
-  console.log("canvasOriginXArray: " + canvasOriginXArray)
-  console.log("canvasOriginYArray: " + canvasOriginYArray)
-  console.log("MINcanvasOriginXArray: " + getMinValue(canvasOriginXArray))
-  console.log("MINcanvasOriginYArray: " + getMinValue(canvasOriginYArray))
+  // console.log("canvasOriginXArray: " + canvasOriginXArray)
+  // console.log("canvasOriginYArray: " + canvasOriginYArray)
+  // console.log("MINcanvasOriginXArray: " + getMinValue(canvasOriginXArray))
+  // console.log("MINcanvasOriginYArray: " + getMinValue(canvasOriginYArray))
 
 
   /////
@@ -96,7 +96,7 @@ var onRun = function(context) {
 
         docWSURLArtboard = getArtboardURL(artboard)
 
-        console.log("artboardWSURL----: "+ docWSURLArtboard)
+        // console.log("artboardWSURL----: "+ docWSURLArtboard)
 
         docWSURLPageArray.push(artboard.name + "\n" + docWSURLArtboard + "\n\n")
       }
@@ -105,7 +105,7 @@ var onRun = function(context) {
 
 
 
-    console.log(docWSURLPageArray)
+    // console.log(docWSURLPageArray)
     // console.log("docWSURLArtboard: "+ docWSURLArtboard)
     copyToClipboard(docWSURLPageArray.reverse().join("\n"))
 
@@ -253,7 +253,5 @@ var onRun = function(context) {
   }
 
 
-
-  // ui.message("💠: Opening Workspace! 👏 🚀");
 
 };

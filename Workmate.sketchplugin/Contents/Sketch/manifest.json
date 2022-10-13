@@ -1,6 +1,6 @@
 {
 	"bundleVersion": 1,
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"icon": "icon.png",
 	"identifier": "com.fbmore.workmate",
 	"description": "Useful commands to speed up your Workspace experience",
@@ -26,12 +26,12 @@
 			"script": "get-artboard-link-artboard-view-clipboard.js",
 			"shortcut": "ctrl alt shift l"
     },
-		{
-			"name": "Copy Artboard Workspace Link as List",
-			"identifier": "Get-Artboard-Link-Clipboard-List",
-			"script": "get-artboard-link-clipboard-list.js"
-    },
-    {
+	{
+			"name": "Copy Selected Artboards as Names Collection",
+			"identifier": "Get-Artboard-Names-As-List",
+			"script": "get-artboard-names-as-list.js"
+	}, 
+	{
 			"name": "Open Artboard in Workspace",
 			"identifier": "Get-Artboard-Link-Canvas",
 			"script": "get-artboard-link-canvas.js"
@@ -75,6 +75,7 @@
 		"items": [
 			"Open-In-Workspace",
 			"Get-Artboard-Link-Artboard-View-Clipboard-2",
+			"Get-Artboard-Names-As-List",
 			"Edit-Doc-Permissions-Workspace",
 			"Go-To-Workspace",
 			"-",
